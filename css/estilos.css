@@ -1,15 +1,19 @@
 :root {
-  --cinza: #182cb5cb9307;
-  --vermelha: #1f56bbd9;
-  --vermelha-escura: #461d4b;
+  --cinza: #00000080;
+  --vermelha: #60525229;
+  --vermelha-escura: #a19c9ceb;
+  --vermelha-mais-escura: rgb(5 5 5);
   --branca: #fff;
-  --luz: rgb(25 42 243 / 80%);
+  --luz: rgb(255 255 255 / 86%);
+  --green: rgb(130 109 109);
+  --blue: rgb(255 255 255);
+  --orange: rgb(194 194 194 / 85%);
 }
 
 
 body { 
   align-items: center;
-  background-image: url(https://wallpaper4k.top/wp-content/uploads/2023/09/wallpaper-4k-paisagem-6218.jpg);
+  background: url(https://wallpaper4k.top/wp-content/uploads/2023/09/wallpaper-4k-paisagem-6218.jpg);
   background-size: 1920px 1080px;
   background-repeat: no-repeat;
   display: flex;
@@ -19,15 +23,19 @@ body {
   min-height: 100vh;
 }
 
-h1 {
-  color:  #fff;
-  margin-bottom: 50px;
-  font-size: 3rem;
+h1 {;
+  background-size: 363px 105px;
+  background-repeat: no-repeat;
+  background-position: -11px -5px;
+  color: var(--blue);
+  font: initial;
+  margin-bottom: 20px;
+  font-size: 4.9rem;
 }
 
 .teclado {
-  background: linear-gradient(to bottom, #778e2d5c 0%,#9fa12747 100%);
-  box-shadow: 6px 6px 0 6px #12547957, 20px 20px 5px #000;
+  background: linear-gradient(to bottom, #8a8a8a5c 0%,#3a3a3747 100%);
+  box-shadow: 3px 6px 0 6px #85898b5c, 20px 20px 5px #161616;
   border-radius: 20px;
   display: grid;
   gap: 20px;
@@ -39,10 +47,11 @@ h1 {
   background-color: #ffffffd1;
   border-radius: 30px;
   box-shadow: 3px 3px 0 var(--cinza);
-  color: var(--vermelha);
+  color: var(--vermelha-mais-escura);
   cursor: pointer;
   height: 120px;
-  font-size: 1.75em;
+  font: initial;
+  font-size: 1.60em;
   font-weight: bold;
   line-height: 120px;
   text-align: center;
@@ -68,3 +77,4 @@ h1 {
 .tecla:active:focus {
   box-shadow: 3px 3px 0 var(--vermelha-escura) inset, 1px 1px 10px var(--luz);
 }
+
